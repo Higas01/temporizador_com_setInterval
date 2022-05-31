@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --primary-color: rgb(17, 86, 102);
+    --primary-color-dark: rgb(9, 48, 56);
+}
+
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body {
+    margin:0;
+    padding: 0;
+    background: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    line-height: 1.5em;
+}
+
+
+.container {
+    background: #fff;
+    max-width: 640px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form input, form label, form button {
+   display: block;
+    height: 40px; 
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+form input {
+    font-size: 24px;
+    height: 50px;
+    padding: 0px 20px;    
+}
+
+form input:focus {
+    outline: 1px var(--primary-color) solid;
+}
+
+form button {
+    border: none;
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 700;
+    height: 50px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+form button:hover {
+    background-color: var(--primary-color-dark);
+}
+
+.timer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+}
+
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-button button {
+    padding: 0.5rem;
+    border: 0.1rem solid var(--primary-color-dark);
+    background-color: var(--primary-color);
+    color: #fff;
+    transition: all 500ms ease-in-out;
+}
+
+
+.container-button button:hover {
+    cursor: pointer;
+    background-color: #fff;
+    color: var(--primary-color);
+}
+
+
+.paused {
+    color: #FF0000;
+}
